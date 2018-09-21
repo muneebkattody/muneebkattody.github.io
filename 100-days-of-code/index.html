@@ -115,8 +115,8 @@
 					<ul class="resume-list">
 						<li>
 							<h2>31 Dec 2018</h2>
-							<h3>Will Complete The Project</h3>
-							<h4>Sree Narayana Arts & Science College</h4>
+							<h3 id="countdown">Will Complete The Project</h3>
+							<h4>To Complete The Project</h4>
 							<p>Sit amet, consectetur adipiscing elit. Sed porttitor orci ut sapien scelerisque viverra. </p>
 						</li>
 					</ul>
@@ -137,28 +137,33 @@
 					<ul class="resume-list">
 						<li>
 							<h2>HTML</h2>
-							<h3>From W3Schools And College</h3>
-							<h4>3 Years Experience.</h4>
+							<h3>From W3Schools And freeCodeCamp</h3>
+							<h4>The Starting</h4>
 						</li>
 						<li>
 							<h2>CSS</h2>
-							<h3>From W3Schools And College</h3>
-							<h4>3 Years Experience.</h4>
+							<h3>From W3Schools And freeCodeCamp</h3>
+							<h4>On the way...</h4>
 						</li>
 						<li>
 							<h2>C++</h2>
-							<h3>From College And Online Study</h3>
-							<h4>2 Years Experience.</h4>
+							<h3>From [loading...]</h3>
+							<h4>On the way...</h4>
 						</li>
 						<li>
 							<h2>PHP</h2>
-							<h3>From College And Online Study</h3>
-							<h4>3 Years Experience.</h4>
+							<h3>From [loading...]</h3>
+							<h4>On the way...</h4>
 						</li>
 						<li>
 							<h2>Javascript</h2>
-							<h3>From W3Schools And College</h3>
-							<h4>3 Years Experience.</h4>
+							<h3>From W3Schools And freeCodeCamp</h3>
+							<h4>On the way...</h4>
+						</li>
+						<li>
+							<h2>[loading...]</h2>
+							<h3>From [loading..]</h3>
+							<h4>[loading...]</h4>
 						</li>
 					</ul>
 				</div>
@@ -177,7 +182,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	</footer>
 	<!-- Footer section end -->
 
+            <script>
+                // Set the date we're counting down to
+                var countDownDate = new Date("Dec 31, 2018 00:00:01").getTime();
 
+                // Update the count down every 1 second
+                var countdownfunction = setInterval(function() {
+
+                    // Get todays date and time
+                    var now = new Date().getTime();
+
+                    // Find the distance between now an the count down date
+                    var distance = countDownDate - now;
+
+                    // Time calculations for days, hours, minutes and seconds
+                    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    // Output the result in an element with id="demo"
+                    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                    + minutes + "m " + seconds + "s ";
+
+
+                    // If the count down is over, write some text 
+                    if (distance < 0) {
+                        clearInterval(countdownfunction);
+                        document.getElementById("countdown1").innerHTML = "EXPIRED";
+                    }
+                }, 10);
+            </script>
 	<!--====== Javascripts & Jquery ======-->
 	<script src="../js/jquery-2.1.4.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
