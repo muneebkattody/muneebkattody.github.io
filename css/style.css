@@ -19,7 +19,10 @@ body {
 		font-size:2em !important;
 	}
 }
-
+.image-banner{
+	width:100%;
+	margin-bottom: 50px;
+}
 h1,
 h2,
 h3,
