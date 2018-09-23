@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://muneebkattody.github.io/</loc>
+
+      <lastmod>2018-09-21</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://muneebkattody.github.io/blog/</loc>
+
+      <changefreq>daily</changefreq>
+
+      <lastmod>2018-09-22</lastmod>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://muneebkattody.github.io/blog/100-days-of-code/</loc>
+
+      <changefreq>daily</changefreq>
+
+      <lastmod>2018-09-22</lastmod>
+
+      <priority>1.0</priority>
+
+   </url>
+   
+   <url>
+
+      <loc>https://muneebkattody.github.io/blog/best-resources-for-computer-science-students/</loc>
+
+      <changefreq>yearly</changefreq>
+
+      <lastmod>2018-09-22</lastmod>
+
+      <priority>1.0</priority>
+
+   </url>
+
+</urlset>
