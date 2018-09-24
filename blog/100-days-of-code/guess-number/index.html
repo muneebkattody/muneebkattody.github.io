@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Guess Number</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        background: green;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .box{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+        padding:30px;
+        min-width:250px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+    #number{
+        padding: 15px;
+        border: 1px solid rgba(0, 0, 0, .5);
+        margin-bottom: 5px;
+        width:100%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    #btn{
+        padding:15px;
+        width:100%;
+        background: red;
+        border:0px;
+        color:#fff;
+    }
+    .inst{
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p class="inst">Type A Number Between 0 & 100</p>
+        <input tabindex="1" type="text" id="number" />
+        <button tabindex="0" onclick="check()" id="btn">CHECK [ENTER]</button>
+        <p  class="inst" id="output">&nbsp;</p>
+    </div>
+
+    <script>
+        var inp = document.getElementById('number');
+        var out = document.getElementById('output');
+
+        function check() {
+            var num = Number(inp.value)
+            if (num > 85) {
+                out.innerHTML = "Too High, Try Again";
+            } else if (num < 85) {
+                out.innerHTML = "Too Low, Try Again";
+            } else {
+                out.innerHTML = "Finally You Caught!";
+            }
+        }
+
+        inp.addEventListener("keyup", function (event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                document.getElementById("btn").click();
+            }
+        });
+    </script>
+</body>
+
+</html>
