@@ -1,11 +1,3 @@
-/* =================================
-------------------------------------
-	Civic - CV Resume
-	Version: 1.0
- ------------------------------------ 
- ====================================*/
-
-
 
 'use strict';
 
@@ -66,6 +58,11 @@ $(window).on('load', function() {
 			}
 		}
 	});
+
+	cookieMessage();
+	function cookieMessage()	{
+		document.getElementById('cook').innerHTML ='<div class="cookie-ask" id="cookieAsk"><a class="close" onclick="document.getElementById(&apos;cookieAsk&apos;).style.display=&apos;none&apos;;">&Cross;</a><p class="content">I&apos;m Sorry. This website uses cookies as any websites do. To know how many people visit this.</p></div>';
+	}
 
 
 	/*------------------
@@ -137,4 +134,3 @@ if($().circleProgress){
 }
 
 })(jQuery);
-
