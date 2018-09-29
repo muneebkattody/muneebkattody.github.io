@@ -12,6 +12,7 @@ html,
 body {
 	height: 100%;
 	font-family: 'Josefin Sans', sans-serif;
+	overflow-x:hidden;
 }
 
 @media only screen and (max-width: 767px) {
