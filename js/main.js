@@ -61,38 +61,10 @@ $(window).on("load", function() {
     }
   });
 
-  function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
-    var expires = "expires=" + d.toUTCString();
-    console.log(cname + "=" + cvalue + ";" + expires + ";path=/");
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-  }
-
-  function getCookie(cname) {
-    var name = cname + "=";
-    var ca = document.cookie.split(";");
-    for (var i = 0; i < ca.length; i++) {
-      var c = ca[i];
-      while (c.charAt(0) == " ") {
-        c = c.substring(1);
-      }
-      if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
-      }
-    }
-    return "";
-  }
-
   cookieMessage();
   function cookieMessage() {
-    var accepted = getCookie("accept");
-    if (accepted == "") {
-      console.log("true");
-      setCookie("accept", "accepted", 365);
-      document.getElementById("cook").innerHTML =
-        '<div class="cookie-ask" id="cookieAsk"><a class="close" onclick="document.getElementById(&apos;cookieAsk&apos;).style.display=&apos;none&apos;;">&Cross;</a><p class="content">I&apos;m Sorry. This website uses cookies as any websites do. To know how many people visit this.</p></div>';
-    }
+    document.getElementById("cook").innerHTML =
+      '<div class="cookie-ask" id="cookieAsk"><a class="close" onclick="document.getElementById(&apos;cookieAsk&apos;).style.display=&apos;none&apos;;">&Cross;</a><p class="content">I&apos;m Sorry. This website uses cookies as any websites do. To know how many people visit this.</p></div>';
   }
 
   /*------------------
