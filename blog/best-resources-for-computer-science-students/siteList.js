@@ -54,14 +54,14 @@ https://education.github.com/
 
 https://see.stanford.edu/
 
-https://ocw.mit.edu/courses/#electrical-engineering-and-computer-science
+https://ocw.mit.edu/courses/
 https://www.w3schools.com/
 https://www.codecademy.com/learn
 https://aws.amazon.com/
 https://cloud.google.com/
 https://www.coursera.org/
 https://www.udacity.com/
-https://www.edx.org/
+https://www.udacity.com/
 https://www.khanacademy.org/
 http://ocw.mit.edu/index.htm
 https://ocw.mit.edu/index.htm
@@ -72,7 +72,6 @@ https://icpc.baylor.edu/
 https://www.wikipedia.org/
 https://arstechnica.com/
 
-https://arstechnica.com/
 http://www.learnpython.org/
 http://www.tutorialspoint.com/
 http://codeforces.com/
@@ -86,7 +85,8 @@ https://www.wikibooks.org/
 https://www.lynda.com/
 http://www.freecodecamp.com/
 https://www.codeschool.com/
-https://www.computingatschool.org.uk/https://www.codewars.com/
+https://www.computingatschool.org.uk
+https://www.codewars.com/
 https://dash.generalassemb.ly/
 https://www.theodinproject.com/home
 https://www.codeconquest.com/
